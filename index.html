@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaplus US Inc. - Nourishing the World Naturally</title>
+    <meta name="description" content="Premium dried fruits and nuts from Vitaplus US Inc. We offer high-quality natural products and private labeling services.">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom utility colours to match Tailwind-style class names -->
+    <style>
+:root {
+    --primary-green: #2F4F2F;
+    --primary-green-dark: #24402A;
+    --accent-gold: #C9A66B;
+    --text-main: #3B2F2F;
+    --bg-light: #F8F8F8;
+    --bg-white: #FFFFFF;
+} 
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+} 
+<h1 class="text-5xl md:text-6xl font-playfair font-bold ...">Vitaplus US Inc.</h1>
+
+        /* colour helpers  */
+        .bg-beige-light{background-color:var(--beige-light);} .bg-beige-medium{background-color:var(--beige-medium);} .bg-green-primary{background-color:var(--green-primary);} .bg-green-primary-dark{background-color:var(--green-primary-dark);} .text-brown-dark{color:var(--brown-dark);} .text-brown-medium{color:var(--brown-medium);} .text-green-primary{color:var(--green-primary);} .text-green-secondary{color:var(--green-secondary);} .text-beige-light{color:var(--beige-light);} .border-brown-medium{border-color:var(--brown-medium);} .hover\:text-green-primary:hover{color:var(--green-primary);} .hover\:bg-beige-light:hover{background-color:var(--beige-light);} .hover\:bg-green-primary-dark:hover{background-color:var(--green-primary-dark);} .hover\:text-green-secondary:hover{color:var(--green-secondary);}  
+
+        body{font-family:'Inter',sans-serif;}
+        html{scroll-behavior:smooth;}
+        .scroll-reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease-out,transform .8s ease-out;}
+        .scroll-reveal.visible{opacity:1;transform:translateY(0);}    
+    </style>
+</head>
+<body class="bg-[#FAF3E0] text-[#7A5548] antialiased">
+
+<!-- ======================= NAVIGATION ======================= -->
+<nav id="navbar" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    
+    <!-- Brand (Larger Logo + Flex Wrap) -->
+    <a href="#home" class="flex items-center space-x-2">
+      <img src="https://assets.onecompiler.app/43jc2y7gf/43jc32a9h/VitaPlus-Logo%20(1).png" alt="Vitaplus Logo" class="h-14 sm:h-16 w-auto" />
+    </a>
+
+    <!-- DESKTOP LINKS -->
+    <div class="hidden md:block ml-10">
+      <div class="flex items-baseline space-x-4">
+        <a href="#home" class="nav-item px-3 py-2 rounded-md text-lg font-medium text-[#7A5548] hover:text-[#556B2F]">Home</a>
+        <a href="#about" class="nav-item px-3 py-2 rounded-md text-lg font-medium text-[#7A5548] hover:text-[#556B2F]">About</a>
+        <a href="#products" class="nav-item px-3 py-2 rounded-md text-lg font-medium text-[#7A5548] hover:text-[#556B2F]">Products</a>
+        <a href="#private-labeling" class="nav-item px-3 py-2 rounded-md text-lg font-medium text-[#7A5548] hover:text-[#556B2F]">Private Labeling</a>
+        <a href="#contact" class="nav-item px-3 py-2 rounded-md text-lg font-medium text-[#7A5548] hover:text-[#556B2F]">Contact</a>
+      </div>
+    </div>
+
+    <!-- MOBILE BURGER -->
+    <div class="md:hidden flex items-center">
+      <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-[#7A5548] hover:text-[#556B2F] hover:bg-[#FAF3E0] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#556B2F]" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg id="menu-icon-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-icon-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE DROPDOWN -->
+  <div class="md:hidden hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-[#7A5548] hover:bg-[#FAF3E0] hover:text-[#556B2F]">Home</a>
+      <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-[#7A5548] hover:bg-[#FAF3E0] hover:text-[#556B2F]">About</a>
+      <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-[#7A5548] hover:bg-[#FAF3E0] hover:text-[#556B2F]">Products</a>
+      <a href="#private-labeling" class="block px-3 py-2 rounded-md text-base font-medium text-[#7A5548] hover:bg-[#FAF3E0] hover:text-[#556B2F]">Private Labeling</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-[#7A5548] hover:bg-[#FAF3E0] hover:text-[#556B2F]">Contact</a>
+    </div>
+  </div>
+</nav>
+
+    <!-- ======================= HERO / BANNER ======================= -->
+<section id="home" class="relative min-h-[450px] md:min-h-[350px] bg-cover bg-center flex items-center justify-center text-white" style="background-image:url('https://assets.onecompiler.app/43jc2y7gf/43jh92npn/shutterstock_75599278%20(1)-min.jpg');">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 text-center px-6 max-w-2xl">
+    <img 
+  src="https://assets.onecompiler.app/43jc2y7gf/43jc32a9h/VitaPlus-Logo%20(1).png" 
+  alt="Vitaplus Logo" 
+  class="h-24 md:h-28 mx-auto mb-5 bg-white/80 rounded-lg p-2 shadow-md"/>
+    <h1 class="text-4xl md:text-5xl font-playfair font-bold tracking-tight mb-3">Vitaplus US Inc.</h1>
+    <p class="text-lg md:text-xl italic mb-5 text-gray-200">Your Trusted Source for Natural Snacks</p>
+    <a href="#products" class="inline-block bg-green-600 hover:bg-green-700 text-white py-2.5 px-6 rounded-full font-semibold shadow-lg transition duration-300 hover:scale-105">Explore Products</a>
+  </div>
+</section>
+        <!-- ======================= PRODUCTS ======================= -->
+<section id="products" class="py-16 lg:py-24 bg-[#F8F8F8]">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 lg:mb-16 scroll-reveal">
+      <h2 class="text-4xl lg:text-5xl font-bold text-brown-dark">Featured Products</h2>
+      <p class="mt-4 text-lg text-brown-medium">Discover our hand-picked selection of premium quality delights.</p>
+    </div>
+
+    <!-- First row: 3 items -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
+      <!-- Almonds -->
+      <div class="bg-beige-medium rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 scroll-reveal">
+        <img class="w-full h-64 object-cover" src="https://assets.onecompiler.app/43jc2y7gf/43jh92npn/Almond.jpg" alt="California Almonds">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-brown-dark mb-2">California Almonds</h3>
+          <p class="text-brown-medium text-sm leading-relaxed">Crunchy, nutrient-rich almonds sourced from the finest California orchards.</p>
+        </div>
+      </div>
+      <!-- Figs -->
+      <div class="bg-beige-medium rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 scroll-reveal" style="transition-delay:.2s;">
+        <img class="w-full h-64 object-cover" src="https://assets.onecompiler.app/43jc2y7gf/43jh92npn/Figs.jpg" alt="Natural Figs">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-brown-dark mb-2">Natural Figs</h3>
+          <p class="text-brown-medium text-sm leading-relaxed">Sweet, naturally dried figs imported from Afghanistan — perfection in every bite.</p>
+        </div>
+      </div>
+      <!-- Cashews -->
+      <div class="bg-beige-medium rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 scroll-reveal" style="transition-delay:.4s;">
+        <img class="w-full h-64 object-cover" src="https://assets.onecompiler.app/43jc2y7gf/43jh92npn/Cashew.png" alt="Premium Cashews">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-brown-dark mb-2">Premium Cashews</h3>
+          <p class="text-brown-medium text-sm leading-relaxed">Creamy, delicious cashews — perfect for snacking or cooking.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row: 2 items centered -->
+    <div class="flex justify-center gap-8 flex-wrap">
+      <!-- Raisins -->
+      <div class="bg-beige-medium w-full md:w-[300px] lg:w-[320px] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 scroll-reveal" style="transition-delay:.6s;">
+        <img class="w-full h-64 object-cover" src="https://assets.onecompiler.app/43jc2y7gf/43jh92npn/GreenRaisins%20(1).png" alt="Green Raisins">
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-brown-dark mb-2">Green Raisins</h3>
+          <p class="text-brown-medium text-sm leading-relaxed">Naturally sweet and chewy raisins — packed with antioxidants and flavor.</p>
+        </div>
+      </div>
+
+      <!-- Pistachios -->
+      <div class="bg-beige-medium w-full md:w-[300px] lg:w-[320px] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 scroll-reveal" style="transition-delay:.8s;">
+        <img class="w-full h-64 object-cover" src="https://assets.onecompiler.app/43jc2y7gf/43jh92npn/Mixedfruit.jpg" alt="Premium Pistachios">
+        <div class="p-6">
+        <h3 class="text-2xl font-semibold text-brown-dark mb-2">And More</h3>
+        <p class="text-brown-medium text-sm leading-relaxed">
+        Discover our full range of dried fruits, nuts, and specialty delights — crafted for taste, health, and quality. Browse the full collection.
+      </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- ======================= ABOUT ======================= -->
+        <section id="about" class="py-16 lg:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 lg:mb-16 scroll-reveal">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-brown-dark">About Vitaplus</h2>
+                    <p class="mt-4 text-lg text-brown-medium">Learn about our journey and commitment to quality.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="scroll-reveal">
+                        <h3 class="text-3xl font-semibold text-brown-dark mb-4">Our Story</h3>
+                        <p class="text-brown-medium mb-6 leading-relaxed">Founded with a passion for wholesome goodness, Vitaplus US Inc. began as a small family venture dedicated to sourcing the finest dried fruits and nuts from around the globe. We believe that nature provides the best nourishment, and our journey has always been about bringing these natural treasures to your table.</p>
+
+                        <h3 class="text-3xl font-semibold text-brown-dark mb-4">Our Mission</h3>
+                        <p class="text-brown-medium leading-relaxed">To be a leading provider of premium quality dried fruits and nuts, fostering health and well-being by making natural, nutritious foods accessible to all. We are committed to sustainable sourcing, ethical practices, and unparalleled customer satisfaction — truly “Nourishing the World Naturally.”</p>
+                    </div>
+                    <div class="scroll-reveal" style="transition-delay:.2s;">
+                        <img src="https://assets.onecompiler.app/43jc2y7gf/43jc32a9h/warehouse.jpg" alt="Vitaplus Facility" class="rounded-xl shadow-xl w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PRIVATE LABEL ======================= -->
+        <section id="private-labeling" class="py-16 lg:py-24 bg-[#F0F5F0] text-[#2F2F2F]">
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-reveal">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Private Labeling Services</h2>
+                <p class="text-lg lg:text-xl mb-8 max-w-3xl mx-auto">Partner with Vitaplus US Inc. for your private-label needs. We offer comprehensive B2B solutions — from sourcing and packaging to global shipping — ensuring your brand receives the premium quality it deserves.</p>
+                <a href="#contact" class="bg-[#2F4F2F] hover:bg-[#24402A] text-white font-semibold py-3 px-8 rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">Get a Quote</a>
+            </div>
+        </section>
+
+        <!-- ======================= CONTACT ======================= -->
+<section id="contact" class="py-16 lg:py-24 bg-[#F8F8F8] text-[#2F2F2F]">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 lg:mb-16 scroll-reveal">
+      <h2 class="text-4xl lg:text-5xl font-bold text-brown-dark">Get In Touch</h2>
+      <p class="mt-4 text-lg text-brown-medium">We'd love to hear from you. Send us a message!</p>
+    </div>
+    <div class="max-w-xl mx-auto bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
+      <form action="https://formspree.io/f/xwpbeqol" method="POST">
+        <!-- Full Name -->
+        <div class="mb-6">
+          <label for="name" class="block text-sm font-medium text-brown-dark mb-1">Full Name</label>
+          <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#556B2F] focus:border-[#556B2F] transition-colors duration-200 text-brown-dark bg-white">
+        </div>
+
+        <!-- Business Name -->
+        <div class="mb-6">
+          <label for="business" class="block text-sm font-medium text-brown-dark mb-1">Business Name</label>
+          <input type="text" name="business" id="business" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#556B2F] focus:border-[#556B2F] transition-colors duration-200 text-brown-dark bg-white">
+        </div>
+
+        <!-- Phone Number -->
+        <div class="mb-6">
+          <label for="phone" class="block text-sm font-medium text-brown-dark mb-1">Phone Number</label>
+          <input type="tel" name="phone" id="phone" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#556B2F] focus:border-[#556B2F] transition-colors duration-200 text-brown-dark bg-white">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium text-brown-dark mb-1">Email Address</label>
+          <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#556B2F] focus:border-[#556B2F] transition-colors duration-200 text-brown-dark bg-white">
+        </div>
+
+        <!-- Message -->
+        <div class="mb-8">
+          <label for="message" class="block text-sm font-medium text-brown-dark mb-1">Message</label>
+          <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#556B2F] focus:border-[#556B2F] transition-colors duration-200 text-brown-dark bg-white"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full flex justify-center py-3 px-4 rounded-lg shadow-sm text-lg font-medium text-white bg-[#556B2F] hover:bg-[#4A5D28] transition-all duration-300 transform hover:scale-105">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ======================= FOOTER ======================= -->
+<footer class="bg-[#2F2F2F] text-white pt-12 pb-8">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+      
+      <!-- Contact Info -->
+      <div>
+        <h5 class="text-xl font-semibold mb-4">Vitaplus US Inc.</h5>
+        <p class="text-sm">P.O. Box: 3984 Washington BLVD SUITE 342 Fremont, CA 94538</p>
+        <p class="text-sm">Phone: (510) 938-1942</p>
+        <p class="text-sm">Email: <a href="mailto:info@vitaplus.com" class="text-green-400 hover:underline">info@vitaplus.com</a></p>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h5 class="text-xl font-semibold mb-4">Quick Links</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#home" class="hover:text-green-400 transition">Home</a></li>
+          <li><a href="#about" class="hover:text-green-400 transition">About Us</a></li>
+          <li><a href="#products" class="hover:text-green-400 transition">Products</a></li>
+          <li><a href="#private-labeling" class="hover:text-green-400 transition">Private Labeling</a></li>
+          <li><a href="#contact" class="hover:text-green-400 transition">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter & Social -->
+      <div>
+        <h5 class="text-xl font-semibold mb-4">Stay Connected</h5>
+        <p class="text-sm mb-3">Join our mailing list for product updates.</p>
+        <form class="flex mb-5">
+          <input type="email" placeholder="Your email" class="w-full px-3 py-2 rounded-l-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400" required>
+          <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-r-md font-medium">Subscribe</button>
+        </form>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="LinkedIn" class="hover:text-green-400 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761..."/></svg>
+          </a>
+          <a href="mailto:info@vitaplus.com" aria-label="Email" class="hover:text-green-400 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4a2 2 0 012-2h16a2..." /></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="hover:text-green-400 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.18 0 3.58..." /></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-600 pt-6 text-center text-sm text-gray-400">
+      &copy; <span id="currentYearFooter"></span> Vitaplus US Inc. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('currentYearFooter').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
+
+    <!-- ======================= JS ======================= -->
+    <script>
+        // Mobile toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu        = document.getElementById('mobile-menu');
+        const menuIconOpen      = document.getElementById('menu-icon-open');
+        const menuIconClose     = document.getElementById('menu-icon-close');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+        });
+
+        // close mobile when link clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if(!mobileMenu.classList.contains('hidden')) mobileMenuButton.click();
+            });
+        });
+
+        // Sticky nav shrink
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if(window.pageYOffset > 50){ navbar.classList.add('py-2','h-16'); navbar.classList.remove('h-20'); }
+            else{ navbar.classList.remove('py-2','h-16'); navbar.classList.add('h-20'); }
+        });
+
+        // Scroll reveal
+        const scrollElements = document.querySelectorAll('.scroll-reveal');
+        const elementInView = (el,dividend=1) => el.getBoundingClientRect().top <= (window.innerHeight||document.documentElement.clientHeight)/dividend;
+        const displayScrollElement = el => el.classList.add('visible');
+        const handleScrollAnimation = () => { scrollElements.forEach(el=>{ if(elementInView(el,1.05)) displayScrollElement(el); }); };
+        window.addEventListener('scroll', handleScrollAnimation);
+        document.addEventListener('DOMContentLoaded', () => {
+            handleScrollAnimation();
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+
+        // Active nav link highlight on scroll (desktop only)
+        const sections = document.querySelectorAll('main section[id]');
+        const navLinks = document.querySelectorAll('#navbar .md\\:block a.nav-item');
+
+        window.addEventListener('scroll', () => {
+            let current='';
+            sections.forEach(section=>{
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= (sectionTop - sectionHeight/3)) current = section.getAttribute('id');
+            });
+            navLinks.forEach(link=>{
+                link.classList.remove('text-green-primary');
+                link.classList.add('text-[#7A5548]');
+                if(link.getAttribute('href').includes(current)){
+                    link.classList.add('text-green-primary');
+                    link.classList.remove('text-[#7A5548]');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
